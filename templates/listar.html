@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Encomendas Pendentes</h1>
+<ul>
+    {% for encomenda in encomendas %}
+        <li>ID: {{ encomenda[0] }}, Unidade: {{ encomenda[1] }}, descricao: {{ encomenda[2] }}, Porteiro: {{ encomenda[3] }}, Recebida em: {{ encomenda[4] }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

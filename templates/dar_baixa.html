@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+    {% for encomenda in encomendas %}
+        <li>ID: {{ encomenda[0] }}, Unidade: {{ encomenda[1] }}, descricao: {{ encomenda[2] }}, Porteiro: {{ encomenda[3] }}, Recebida em: {{ encomenda[4] }}</li>
+    {% endfor %}
+</ul>
+<h1>Dar Baixa em Encomenda</h1>
+<form method="POST">
+    ID da Encomenda: <input type="number" name="id_encomenda"><br>
+    <input type="submit" value="Dar Baixa">
+</form>
+{% endblock %}

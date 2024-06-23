@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Registrar Encomenda</h1>
+<form method="POST">
+    Unidade: <input type="text" name="unidade"><br>
+    Descrição: <input type="text" name="descricao"><br>
+    Porteiro: <input type="text" name="porteiro"><br>
+    Data de Recebimento: <input type="date" name="data_recebimento"><br>
+    <input type="submit" value="Registrar">
+</form>
+{% endblock %}
+    
